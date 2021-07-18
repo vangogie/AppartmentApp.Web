@@ -8,9 +8,10 @@ using Microsoft.Extensions.Configuration;
 
 namespace AppartmentApp.DataAccess.CustomDbContext
 {
-    class CustomDbContext : DbContext
+    public class CustomDbContext : DbContext
     {
-        public CustomDbContext(string connectionString) : base(DbOptions(connectionString))
+        public static string connectionString => ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString;
+        public CustomDbContext() : base(DbOptions(connectionString))
         {
             
         }
