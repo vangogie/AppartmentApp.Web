@@ -7,5 +7,6 @@ namespace AppartmentApp.DataAccess.Entity
     public class InternetProvider : BaseEntity
     {
         public string Name { get; set; }
+        public ICollection<Appartment> Appartments { get; set; }
     }
 }

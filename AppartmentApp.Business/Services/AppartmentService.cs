@@ -26,7 +26,7 @@ namespace AppartmentApp.Business.Services
                     Id = item.Id,
                     Name = item.Name, 
                     Area = item.Area, 
-                    Amenities = item.Amenities, 
+                    //Amenities = item.AppartmentAmenities, 
                     CurrentAdress = item.CurrentAdress, 
                     InternetProviderName = item.InternetProviderName, 
                     Price = item.Price, 
