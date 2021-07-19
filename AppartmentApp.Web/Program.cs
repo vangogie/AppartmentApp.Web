@@ -1,4 +1,6 @@
+using AppartmentApp.DataAccess.CustomDbContext;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -14,6 +16,8 @@ namespace AppartmentApp.Web
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
+
+
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -22,5 +26,6 @@ namespace AppartmentApp.Web
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+
     }
 }

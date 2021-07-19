@@ -6,6 +6,6 @@ namespace AppartmentApp.DataAccess.Entity
 {
     public class AppartmentType : BaseEntity
     {
-        public string Type { get; set; }
+        public string TypeOfAppartment { get; set; }
     }
 }

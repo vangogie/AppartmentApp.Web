@@ -13,7 +13,6 @@ namespace AppartmentApp.DataAccess.CustomDbContext
         public static string connectionString => ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString;
         public CustomDbContext() : base(DbOptions(connectionString))
         {
-            
         }
 
         private static DbContextOptions DbOptions(string connectionString)
