@@ -5,10 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\AppartmentApp.Business\AppartmentApp.Business.csproj" />
     <ProjectReference Include="..\AppartmentApp.DataAccess\AppartmentApp.DataAccess.csproj" />
   </ItemGroup>
 

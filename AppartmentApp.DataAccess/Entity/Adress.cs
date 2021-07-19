@@ -9,6 +9,7 @@ namespace AppartmentApp.DataAccess.Entity
         public string Country { get; set; }
         public string Reqion { get; set; }
         public string City { get; set; }
+        public string Street { get; set; }
         public string HouseNumber { get; set; }
         public string EntranceNumber { get; set; }
         public string FlatNumber { get; set; }
